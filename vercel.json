@@ -2,14 +2,7 @@
   "version": 2,
   "routes": [
     {
-      "src": "index.js",
-      "methods": ["GET", "POST"]
-    },
-    {
-      "src": "index.js",
-      "methods": ["GET", "POST"]
-    },
-    {
+      "url": "/api/*",
       "src": "index.js",
       "methods": ["GET", "POST"]
     }
