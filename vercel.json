@@ -2,17 +2,14 @@
   "version": 2,
   "routes": [
     {
-      "url": "/api/auth",
       "src": "index.js",
       "methods": ["GET", "POST"]
     },
     {
-      "url": "/api/sales",
       "src": "index.js",
       "methods": ["GET", "POST"]
     },
     {
-      "url": "/api/inventories",
       "src": "index.js",
       "methods": ["GET", "POST"]
     }
