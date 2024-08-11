@@ -1,12 +1,14 @@
 const express = require("express");
-const router = express.Router();
+// const router = express.Router();
+const app = express();
+
 const bcrypt = require("bcrypt");
 const User = require("../models/register.model"); // Assuming you have a User model defined
 const jwt = require("jsonwebtoken");
 const secretKey = "noman@12345";
 
 // POST route for user registration
-router.post("/", async (req, res) => {
+app.post("/", async (req, res) => {
   const { email, username, password } = req.body;
 
   try {
@@ -53,7 +55,7 @@ router.post("/", async (req, res) => {
 });
 
 // GET route to fetch user information by email (optional)
-router.get("/", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     // Find the user by email
     const user = await User.find();
@@ -64,4 +66,4 @@ router.get("/", async (req, res) => {
   }
 });
 
-module.exports = router;
+module.exports = app;
