@@ -1,5 +1,5 @@
 const User = require("../models/register.model");
-const createError = require("../utils/appError");
+// const createError = require("../utils/appError");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const Login = require('../models/login.model')
